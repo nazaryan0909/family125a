@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You, My Family</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.5em;
+            color: #000000;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .heart {
+            font-size: 2em;
+            animation: heartbeat 1.5s infinite;
+        }
+        .decorative-images {
+            position: absolute;
+            top: -80px; /* Moved further up */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* Increased gap between images */
+            z-index: -1;
+        }
+        .decorative-images img {
+            width: 120px; /* Increased size */
+            height: 120px;
+            border-radius: 15px; /* Curved square shape */
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decorative-images">
+            <!-- Add decorative pictures here -->
+            <img src="./pictures/1.jpg" alt="Heart">
+            <img src="./pictures/2.jpg" alt="Flower">
+            <img src="./pictures/3.jpg" alt="Sparkle">
+        </div>
+        <h1>Thank You, My Family</h1>
+        <p>For everything you have given me, for everything I have, and for all that I am still receiving—thank you. I love you.</p>
+        <div class="heart">❤️</div>
+    </div>
+</body>
+</html>
